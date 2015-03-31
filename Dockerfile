@@ -8,6 +8,6 @@ RUN \
  echo "LANG=\"en_GB.UTF-8\"" > /etc/sysconfig/i18n \
  && yum -q -y update \
  && yum -q -y upgrade \
- && yum install -y -q vim git subversion curl unzip wget cron \
+ && yum install -y -q vim git subversion curl unzip wget cron vixie-cron \
  && /bin/bash /tmp/setup.sh && rm -f /tmp/setup.sh
 
